@@ -13,7 +13,10 @@ app = FastAPI(title="Portfolio AI Chatbot API")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=[
+        "http://localhost:5173",
+        "https://portfolio-one-wheat-34.vercel.app",  # Your production Vercel frontend
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
