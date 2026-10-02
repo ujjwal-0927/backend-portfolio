@@ -15,6 +15,7 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "http://localhost:5173",
+        "https://ujjwaldev.me",
         "https://portfolio-one-wheat-34.vercel.app",  # Your production Vercel frontend
     ],
     allow_credentials=True,
